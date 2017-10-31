@@ -7,11 +7,21 @@
 		<link href="css/leaderboard.css" rel="stylesheet" type="text/css"/>
 	</head>
 	<body onload="startAnimation()">
-		<div class="container">
-			<div id="header" class="navbar">
-				
+		<div class="container"> <!--main container div starts here-->
+			<div id="header" class="navbar"> <!--header div starts here-->
+				<div class="container-inner full-height">
+					<div class="pull-left mt-tp-sm pointer" onclick="closeOverlay()">
+						<img src="css/images/icon1.png" alt="icon" class="icon-home">
+					</div>
+					<div class="pull-left logo-head padding-top-lg full-height pointer" onclick="closeOverlay()">Badminton Tournament</div>
+					<div class="pull-right">
+						<div class="full-height profile padding-top-lg pointer" onclick="openOverlay()">
+							Players' profile
+						</div>
+					</div>
+				</div>
 			</div>
-			<div class="container-inner">
+			<div class="container-inner"> <!--carousel container-->
 				<div class="carousel" data-ride="carousel">
 					<div class="item" data-active="0">
 						<img src="css/images/img1.png" alt="img1" class="item-images">
@@ -27,12 +37,13 @@
 					</div>
 				</div>
 				<!--end of carousel-->
-				
+				<!--modal overlay-->
+				<div class="modal-overlay hide" id="modal-overlay"></div>
 			</div>
-			<div id="footer" class="footer-bar">
+			<div id="footer" class="footer-bar"> <!--footer div starts here-->
 				
-			</div>
-		</div>
+			</div> <!--footer div ends here-->
+		</div> <!--container div ends here-->
 	</body>
 </html>
 <script src="js/leaderboard.js"></script>

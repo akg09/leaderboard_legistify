@@ -25,3 +25,11 @@ var hideAllImages = function (items) {
 		img.classList.add('hide');
 	}
 }
+var openOverlay = function () {
+	let modal = document.getElementById('modal-overlay');
+	modal.style.display = "block";
+}
+var closeOverlay = function () {
+	let modal = document.getElementById('modal-overlay');
+	modal.style.display = "none";
+}

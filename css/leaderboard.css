@@ -2,15 +2,34 @@ body {
 	height 		: 100%;
 	background 	: #fff;
 	margin 		: 0;
+	font-family: Georgia,sans-serif,Arial;
+	font-size 	: 21px;	
 }
-.container {
-	margin :0;
+.full-height{
+	height : 100%
 }
 .container-inner {
-    width	: 1260px;
-    margin	: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.item.item-images {
+@media (min-width: 768px) {
+  .container-inner {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container-inner {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container-inner {
+    width: 1260px;
+  }
+}
+.item-images {
 	max-width	: 100%;
   	height		: auto;
 }
@@ -32,4 +51,44 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
+}
+.icon-home {
+	height: 50px;
+	width: 50px;
+}
+.logo-head {
+	font-style: oblique;
+}
+.padding-top-lg {
+	padding-top: 15px!important;
+}
+.pull-left {
+	float : left;
+}
+.pull-right {
+	float: right;
+}
+.mt-tp-sm {
+	margin-top : 2px;
+}
+.profile {
+	background-color : #428ff4;
+	color : #fff;
+	font-size: 18px;
+	padding: 0 10px 0 10px;
+	border : 1px solid #428ff4;
+}
+.modal-overlay {
+	height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 57px;
+    z-index: 1000;
+    background-color: #fff;
+}
+#modal-overlay {
+	display : none;
+}
+.pointer {
+	cursor : pointer;
 }
